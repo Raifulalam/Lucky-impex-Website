@@ -331,6 +331,7 @@ button:focus-visible {
 @media only screen and (min-width: 425px) {
   .main-container {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     margin-top: 75px;
     align-items: center;
     text-align: center;
