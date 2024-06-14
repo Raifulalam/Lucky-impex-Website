@@ -331,7 +331,7 @@ button:focus-visible {
 @media only screen and (min-width: 425px) {
   .main-container {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+
     margin-top: 75px;
     align-items: center;
     text-align: center;
@@ -377,7 +377,7 @@ button:focus-visible {
 .buy {
   display: flex;
   margin-left: 15px;
-  gap: 130px;
+  gap: 40px;
   font-size: large;
 }
 
@@ -388,9 +388,9 @@ button:focus-visible {
   text-decoration: none;
   border: none;
   border-radius: 35px;
-  padding: 5px;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
 }
 
 .add-to-cart {
@@ -400,9 +400,9 @@ button:focus-visible {
   text-decoration: none;
   border: none;
   border-radius: 35px;
-  padding: 5px;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
 }
 
 .add-to-cart:hover {
