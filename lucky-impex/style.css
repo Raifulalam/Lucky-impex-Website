@@ -116,25 +116,40 @@ button:focus-visible {
   top: 0;
   left: 0;
   right: 0;
-  height: 40px;
+  height: 55px;
   box-shadow: 0px 1px 3px skyblue;
 
 
 
 }
 
+.header-link {
+  display: inline-block;
+  padding: 6px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.header-link:hover {
+  border: 1px solid white;
+}
+
+
+
 .left {
   display: flex;
   align-items: center;
-  height: 40px;
+  height: 80px;
   color: rgb(21, 54, 82);
 
 }
 
-.left p {
+.lucky-name {
   margin: 0;
   padding: 0;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
   font-family: 'Roboto', sans-serif;
   display: block;
@@ -144,74 +159,178 @@ button:focus-visible {
   background-size: cover;
   color: transparent;
   background-clip: text;
+  cursor: pointer;
 
 }
 
-.left img {
-  height: 40px;
+.lucky-name:hover {
+  background-image: linear-gradient(rgb(7, 31, 59), rgb(250, 21, 82));
+  transition: 0.1ms;
+
+}
+
+.lucky-logo {
+  height: 60px;
+
+}
+
+@media (max-width: 800px) {
+  .left {
+    width: unset;
+  }
 }
 
 .middle {
+  flex: 1;
+  max-width: 850px;
+  margin-left: 10px;
+  margin-right: 10px;
   display: flex;
-  align-content: center;
-  height: 30px;
-  background-color: rgb(255, 255, 255);
-
-  border-radius: 5px;
 }
 
-.header button {
-  background-color: #f9f9f9;
+.search-bar {
+  flex: 1;
+  width: 0;
+  font-size: 16px;
+  height: 38px;
+  padding-left: 15px;
   border: none;
-  outline: none;
-  border-radius: 2px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
-.middle img {
+.search-button {
+  background-color: rgb(254, 189, 105);
   border: none;
-  outline: none;
-  height: 100%;
-
-  background-color: transparent;
+  width: 45px;
+  height: 40px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  flex-shrink: 0;
 }
 
-.middle input {
-  border: none;
-  outline: none;
-  background-color: transparent;
-  color: rgb(69, 65, 65);
-  font-size: 12px;
-  font-weight: 100;
-  padding-left: 10px;
-  padding-right: 200px;
-  border-radius: 3px;
-  background-color: #f9f9f9;
+.search-icon {
+  height: 22px;
+  margin-left: 2px;
+  margin-top: 3px;
 }
 
+@media (max-width: 575px) {
+  .lucky-logo {
+    display: none;
+  }
+
+  .lucky-name {
+    display: block;
+    height: 35px;
+    margin-top: 5px;
+  }
+
+  .left {
+    display: none;
+  }
+}
+
+@media (max-width:600px) {
+  .left {
+    display: none;
+  }
+}
+
+.right {
+
+  flex-shrink: 0;
+  display: flex;
+}
+
+.orders-link {
+  color: rgb(245, 239, 239);
+}
+
+.returns-text {
+  display: block;
+  font-size: 15px;
+}
+
+.orders-text {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.cart-link {
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.cart-icon {
+  width: 50px;
+
+}
+
+.cart-text {
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.cart-quantity {
+  color: rgb(200, 113, 0);
+  font-size: 16px;
+  font-weight: 700;
+
+  position: absolute;
+  top: 4px;
+  left: 22px;
+
+  width: 26px;
+  text-align: center;
+}
+
+
+
+
+/* main body */
 .main-container {
   display: grid;
   margin-top: 43px;
-  margin-left: 4px;
+  margin-left: 6px;
+  margin-right: 4px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 12px;
   text-align: left;
   align-items: start;
   align-content: baseline;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+  cursor: pointer;
 }
+
+
 
 
 @media only screen and (min-width: 768px) {
   .main-container {
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 75px;
+  }
+
+  .header {
+    height: 70px;
   }
 
 }
 
 @media only screen and (min-width: 992px) {
   .main-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .header {
+    height: 60px;
   }
 
 }
@@ -233,7 +352,7 @@ button:focus-visible {
 .buy {
   display: flex;
   margin-left: 15px;
-  gap: 60px;
+  gap: 40px;
   font-size: small;
 }
 
@@ -266,3 +385,25 @@ button:focus-visible {
 .product-name {
   font-size: 12px;
 }
+
+
+
+/* 
+
+
+  .amazon-mobile-logo {
+    display: block;
+    height: 35px;
+    margin-top: 5px;
+  }
+}
+
+.amazon-header-middle-section {
+ 
+}
+
+.
+
+
+
+ */
