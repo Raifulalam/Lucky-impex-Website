@@ -333,13 +333,13 @@ button:focus-visible {
   .main-container {
     grid-template-columns: 1fr 1fr;
 
-    margin-top: 75px;
+    margin-top: 110px;
     align-items: center;
     text-align: center;
   }
 
   .header {
-    height: 120px;
+    height: 70px;
   }
 
 
