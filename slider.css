@@ -46,12 +46,15 @@ div#slider {
     height: 100vh;
     position: sticky;
     background-size: cover;
+    margin-top: 68px;
+    z-index: 0;
 
 }
 
 div#slider figure img {
     width: 20%;
     float: left;
+    z-index: 0;
 }
 
 div#slider figure {
@@ -61,6 +64,6 @@ div#slider figure {
     left: 0;
     text-align: left;
     font-size: 0;
-    animation: 10s slidy infinite;
+    animation: 30s slidy infinite;
 
 }

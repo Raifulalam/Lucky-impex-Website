@@ -118,6 +118,7 @@ button:focus-visible {
   right: 0;
   height: 55px;
   box-shadow: 0px 1px 3px skyblue;
+  z-index: 1;
 
 
 
@@ -338,7 +339,7 @@ button:focus-visible {
   }
 
   .header {
-    height: 90px;
+    height: 120px;
   }
 
 
@@ -377,8 +378,9 @@ button:focus-visible {
 .buy {
   display: flex;
   margin-left: 15px;
-  gap: 40px;
+  gap: 80px;
   font-size: large;
+  text-decoration: none;
 }
 
 .buy-now {
@@ -391,6 +393,7 @@ button:focus-visible {
   padding: 10px;
   padding-left: 28px;
   padding-right: 28px;
+  text-decoration: none;
 }
 
 .add-to-cart {
