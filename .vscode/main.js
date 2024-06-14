@@ -7,6 +7,6 @@ function activate(_context) {
    window.showInformationMessage('Hello, World!');
 }
 
-function deactivate() {}
+function deactivate() { }
 
 module.exports = { activate, deactivate }
