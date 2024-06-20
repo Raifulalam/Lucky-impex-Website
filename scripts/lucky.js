@@ -1,78 +1,3 @@
-const products = [{
-  image: 'front-image/RT28A32216R.png',
-  name: 'RT28A32216U Samsung Double Door Refrigerator , 253L',
-  rating: {
-    stars: 4.5,
-    reviews: 100
-  },
-  mrp: 61000,
-  discount: 10,
-  price: 55000
-
-},
-{
-  image: 'front-image/RT28C3221CR.png',
-  name: 'RT28C3221CU Samsung Double Door Refrigerator, 253L',
-  rating: {
-    stars: 4.5,
-    reviews: 120
-  },
-  mrp: 60000,
-  discount: 10,
-  price: 54000
-
-},
-{
-  image: 'front-image/Coolkin-28R.jpg',
-  name: 'CG brand desert air cooler -35L with digital remote control technology',
-  rating: {
-    stars: 4.2,
-    reviews: 50
-  },
-  mrp: 21000,
-  discount: 10,
-  price: 18000
-
-},
-{
-  image: 'front-image/RT28C3221CR.png',
-  name: 'RT28C3221CU Samsung Double Door Refrigerator, 253L',
-  rating: {
-    stars: 4.5,
-    reviews: 120
-  },
-  mrp: 60000,
-  discount: 10,
-  price: 54000
-
-},
-{
-  image: 'front-image/RT28C3221CR.png',
-  name: 'RT28C3221CU Samsung Double Door Refrigerator, 253L',
-  rating: {
-    stars: 4.5,
-    reviews: 120
-  },
-  mrp: 60000,
-  discount: 10,
-  price: 54000
-
-},
-{
-  image: 'front-image/RT28C3221CR.png',
-  name: 'RT28C3221CU Samsung Double Door Refrigerator, 253L',
-  rating: {
-    stars: 4.5,
-    reviews: 120
-  },
-  mrp: 60000,
-  discount: 10,
-  price: 54000
-
-},
-
-
-];
 
 let productsHTML = '';
 
@@ -124,13 +49,43 @@ products.forEach((product) => {
           Added
         </div>
 
-        <button class="add-to-cart-button button-primary">
+        <button class="add-to-cart-button button-primary js-add-to-cart"
+        data-product-id="${product.id}">
           Add to Cart
         </button>
       </div>`;
 });
-console.log(productsHTML);
 
 document.querySelector('.js-product-grid').innerHTML = productsHTML;
+
+document.querySelectorAll('.js-add-to-cart').forEach((button) => {
+  // Add event listener to each add to cart button
+  button.addEventListener('click', () => {
+    const productId = button.dataset.productId;
+
+    let matchingItem;
+    cart.forEach((item) => {
+      if (productId === item.productId) {
+        matchingItem = item;
+      }
+    });
+    if (matchingItem) {
+      matchingItem.quantity++;
+    } else {
+      cart.push({
+        productName: productId,
+        quantity: 1
+      });
+    }
+
+    let cartQuantity = 0;
+    cart.forEach((item) => {
+      cartQuantity += item.quantity;
+    });
+
+    document.querySelector('.js-cart-quantity').innerHTML = cartQuantity;
+
+  });
+})
 
 
