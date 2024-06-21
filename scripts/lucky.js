@@ -5,7 +5,9 @@ let productsHTML = '';
 products.forEach((product) => {
   productsHTML += `  <div class="product-container">
         <div class="product-image-container">
+         <a href="${product.link}">
           <img class="product-image" src="${product.image}">
+           </a>
         </div>
 
         <div class="product-name limit-text-to-2-lines">

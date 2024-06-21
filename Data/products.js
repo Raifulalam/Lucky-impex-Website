@@ -1,8 +1,10 @@
 export const products = [
     {
         id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
-        image: "images/products/athletic-cotton-socks-6-pairs.jpg",
+        image: "front-image/RT28A32216R.png",
         name: "Black and Gray Athletic Cotton Socks - 6 Pairs",
+        link: "details.html",
+        details: "refrigerator of 100l samsung 22452",
         rating: {
             stars: 4.5,
             count: 87
