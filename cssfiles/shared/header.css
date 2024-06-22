@@ -69,9 +69,18 @@
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .left {
         width: unset;
+    }
+
+    .header {
+        height: 105px;
+        padding: 0%;
+    }
+
+    .search-bar {
+        height: 88px;
     }
 }
 
@@ -132,6 +141,8 @@
     .left {
         display: none;
     }
+
+
 }
 
 .right {

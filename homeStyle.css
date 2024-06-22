@@ -109,3 +109,22 @@ span {
     font-weight: bold;
 
 }
+
+.image img {
+    width: 100%;
+    background-color: aqua;
+
+}
+
+.image {
+    position: relative;
+    top: 5px;
+    overflow: visible;
+
+}
+
+.lucky-details {
+    position: absolute;
+    z-index: 1;
+
+}

@@ -7,39 +7,32 @@
     <title>Document</title>
     <link rel="stylesheet" href="cssfiles/shared/slider.css">
     <link rel="stylesheet" href="cssfiles/shared/header.css">
-    <link rel="stylesheet" href="cssfiles/style.css">
-    <link rel="stylesheet" href="cssfiles/general.css">
+    <!-- <link rel="stylesheet" href="cssfiles/style.css">
+    <link rel="stylesheet" href="cssfiles/general.css"> -->
     <style>
-        .main-container {
+        .card-container {
             display: flex;
-            justify-content: center;
+            width: 100%;
             margin-top: 60px;
-            height: 100vh;
-            background-color: #811414;
+
 
         }
 
         @media(max-width:768px) {
-            .main-container {
-                display: grid;
-                grid-template-rows: 1fr 1fr;
-                margin: 0;
-                margin-left: 406px;
-                row-gap: 40px;
-                justify-content: center;
-                align-items: center;
+            .card-container {
+                display: flex;
+                flex-direction: column;
 
             }
 
-            .image {
-                width: 100%;
 
-            }
 
             .image-container {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                width: 100px;
+
 
             }
 
@@ -48,10 +41,11 @@
                 justify-content: center;
                 align-items: center;
             }
+
         }
 
         .image {
-            width: 100vh;
+            width: 100px;
         }
 
         .image-container {
@@ -59,9 +53,11 @@
         }
 
         .info {
-            margin-left: 20px;
+
             display: flex;
             flex-direction: column;
+            font-size: larger;
+            gap: 30px;
 
 
 
@@ -83,8 +79,9 @@
         }
 
         .name {
-            font-size: 24px;
+            font-size: 34px;
             font-weight: bold;
+            margin-top: 16px;
 
         }
     </style>
@@ -118,7 +115,7 @@
         </div>
     </div>
 
-    <div class="main-container">
+    <div class="card-container">
         <div class="image-container">
             <div id="slider">
                 <figure>
@@ -150,7 +147,7 @@
         </div>
 
     </div>
-    <script type="module" src="scripts/lucky.js"></script>
+
 </body>
 
 </html>
