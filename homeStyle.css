@@ -8,14 +8,7 @@
 /* Navbar container */
 
 /* Links inside the navbar */
-.dropdown-content a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+
 
 /* Dropdown container */
 .products {
@@ -26,7 +19,7 @@
 
 /* Dropdown button */
 .products .dropbtn {
-    font-size: 16px;
+    font-size: larger;
     border: none;
     outline: none;
     color: white;
@@ -97,7 +90,7 @@
     color: white;
     outline: none;
     text-decoration-line: none;
-    text-decoration: none;
+    font-size: larger;
 }
 
 .lucky-details {
