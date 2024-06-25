@@ -75,12 +75,13 @@
     }
 
     .header {
-        height: 105px;
-        padding: 0%;
+        height: 60px;
+
+        margin-bottom: 70px;
     }
 
     .search-bar {
-        height: 88px;
+        height: 60px;
     }
 }
 
@@ -135,12 +136,19 @@
     .left {
         display: none;
     }
+
+    .header {
+        height: 60px;
+    }
+
+
 }
 
 @media (max-width:600px) {
     .left {
         display: none;
     }
+
 
 
 }

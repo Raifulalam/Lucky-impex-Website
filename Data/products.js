@@ -9,7 +9,8 @@ export const products = [
             stars: 4.5,
             count: 87
         },
-        priceCents: 1090,
+        mrp: 15000,
+        price: 10900,
         keywords: [
             "socks",
             "sports",
