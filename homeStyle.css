@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     justify-content: space-between;
-    gap: 60px;
+
 }
 
 /* Navbar container */
@@ -21,6 +21,7 @@
 .products {
     float: left;
     overflow: hidden;
+
 }
 
 /* Dropdown button */
@@ -73,14 +74,7 @@
 
 /* /////////////////////////////////////////////////////// */
 
-.lucky-products,
-.services,
-.contact-details,
-.header-link {
-    font-size: larger;
-    text-decoration: none;
-    text-decoration: none;
-}
+
 
 
 .image img {
@@ -95,6 +89,15 @@
     overflow: visible;
 
 
+}
+
+.services a,
+.contact-details a {
+    display: block;
+    color: white;
+    outline: none;
+    text-decoration-line: none;
+    text-decoration: none;
 }
 
 .lucky-details {
@@ -209,6 +212,7 @@ body {
 .main-branch-details {
     display: flex;
     flex-direction: column;
+    max-width: fit-content;
 
 
 
@@ -266,13 +270,27 @@ body {
         height: 0%;
     }
 
-    .branch-details {
-        display: flex;
-        flex-direction: column;
+    .details {
+        font-size: 12px;
+        line-height: normal;
     }
 
+    .main-branch,
+    .maisthan-branch {
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
+        gap: 8px;
+    }
+
+
+    .image-container {
+        margin: 0%;
+    }
+
+
     .image-container img {
-        max-width: 200px;
+        max-width: 100%;
     }
 }
 
@@ -407,6 +425,7 @@ body {
         flex-direction: column;
         padding-left: 8px;
         gap: 15px;
+
 
     }
 
