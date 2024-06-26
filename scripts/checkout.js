@@ -36,7 +36,7 @@ cart.forEach((cartItem) => {
                                 <span class="update-quantity-link link-primary">
                                     Update
                                 </span>
-                                <span class="delete-quantity-link link-primary js-delete-link"data-product-id="${matchingProducts.id}">
+                                <span class="delete-quantity-link link-primary js-delete-link" data-product-id="${matchingProducts.id}">
                                     Delete
                                 </span>
                             </div>
@@ -82,74 +82,7 @@ cart.forEach((cartItem) => {
                         </div>
                     </div>
                 </div>
-                 <div class="cart-item-container">
-                    <div class="delivery-date">
-                        Delivery date: Wednesday, June 15
-                    </div>
-
-                    <div class="cart-item-details-grid">
-                        <img class="product-image" src="">
-
-                        <div class="cart-item-details">
-                            <div class="product-name">
-                                Intermediate Size Basketball
-                            </div>
-                            <div class="product-price">
-                                $20.95
-                            </div>
-                            <div class="product-quantity">
-                                <span>
-                                    Quantity: <span class="quantity-label">1</span>
-                                </span>
-                                <span class="update-quantity-link link-primary">
-                                    Update
-                                </span>
-                                <span class="delete-quantity-link link-primary">
-                                    Delete
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="delivery-options">
-                            <div class="delivery-options-title">
-                                Choose a delivery option:
-                            </div>
-
-                            <div class="delivery-option">
-                                <input type="radio" class="delivery-option-input" name="delivery-option-2">
-                                <div>
-                                    <div class="delivery-option-date">
-                                        Tuesday, June 21
-                                    </div>
-                                    <div class="delivery-option-price">
-                                        FREE Shipping
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="delivery-option">
-                                <input type="radio" checked class="delivery-option-input" name="delivery-option-2">
-                                <div>
-                                    <div class="delivery-option-date">
-                                        Wednesday, June 15
-                                    </div>
-                                    <div class="delivery-option-price">
-                                        $4.99 - Shipping
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="delivery-option">
-                                <input type="radio" class="delivery-option-input" name="delivery-option-2">
-                                <div>
-                                    <div class="delivery-option-date">
-                                        Monday, June 13
-                                    </div>
-                                    <div class="delivery-option-price">
-                                        $9.99 - Shipping
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                 
                 </div>
 `
 });
@@ -157,8 +90,9 @@ document.querySelector('.js-order-summary').innerHTML = cartSummaryHTML;
 document.querySelectorAll('.js-delete-link')
     .forEach((link) => {
         link.addEventListener('click', (event) => {
-            const productId = link.CDATA_SECTION_NODE.productId;
+            const productId = link.dataset.productId;
             removeFromCart(productId);
+            console.log(cart);
 
         });
 
