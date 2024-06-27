@@ -1,3 +1,15 @@
+
+export function getProduct(productId) {
+    let matchingProducts;
+    products.forEach((product) => {
+        if (product.id === productId) {
+            matchingProducts = product;
+        }
+    });
+    return matchingProducts;
+}
+
+
 export const products = [
     {
         id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
@@ -9,8 +21,8 @@ export const products = [
             stars: 4.5,
             count: 87
         },
-        mrp: 15000,
-        price: 10900,
+        mrp: 48990,
+        price: 41750,
         keywords: [
             "socks",
             "sports",
