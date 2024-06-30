@@ -15,19 +15,19 @@ products.forEach((product) => {
         </div>
 
         <div class="product-rating-container">
-          <img class="product-rating-stars" src="images/ratings/rating-40.png">
+          <img class="product-rating-stars" src="${product.getStarsUrl()}">
           <div class="product-rating-count link-primary">
             ${product.rating.count} reviews
           </div>
         </div>
          <div class="product-mrp">
-          MRP: ${product.mrp}
+         MRP: ${product.getMrp()}
         </div>
          <div class="product-discount">
-          Discount: Rs.${product.mrp - product.price}
+          Discount: ${product.getDiscount()}
         </div>
         <div class="product-price">
-         Rs. ${product.price}
+        Best Buy:${product.getPrice()}
         </div>
 
         <!-- <div class="product-quantity-container">

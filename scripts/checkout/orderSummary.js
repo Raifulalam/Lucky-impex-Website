@@ -36,7 +36,7 @@ export function renderOrderSummary() {
                                    ${matchingProducts.name};
                                 </div>
                                 <div class="product-price">
-                                   ${matchingProducts.price}
+                                  ${matchingProducts.getPrice()}
                                 </div>
                                 <div class="product-quantity">
                                     <span>

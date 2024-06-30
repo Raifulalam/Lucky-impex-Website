@@ -10,6 +10,44 @@ export function getProduct(productId) {
 }
 
 
+class Product {
+    id;
+    image;
+    name;
+    link;
+    details;
+    rating;
+    mrp;
+    price;
+
+    constructor(productDetails) {
+        this.id = productDetails.id;
+        this.image = productDetails.image;
+        this.name = productDetails.name;
+        this.link = productDetails.link;
+        this.details = productDetails.details;
+        this.rating = productDetails.rating;
+        this.mrp = productDetails.mrp;
+        this.price = productDetails.price;
+    }
+    getStarsUrl() {
+        return ` images/ratings/rating-${this.rating.stars * 10}.png`;
+    }
+    getPrice() {
+        return ` Rs.${this.price}`;
+
+    }
+    getMrp() {
+        return ` Rs.${this.mrp}`
+    }
+    getDiscount() {
+        return `Rs ${this.mrp - this.price}`
+    }
+
+}
+
+console.log(product1);
+
 export const products = [
     {
         id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
@@ -675,4 +713,7 @@ export const products = [
             "mens"
         ]
     }
-];
+].map((productDetails) => {
+    return new Product(productDetails);
+});
+
