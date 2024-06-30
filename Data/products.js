@@ -43,10 +43,29 @@ class Product {
     getDiscount() {
         return `Rs ${this.mrp - this.price}`
     }
+    // extraInfoHTML() {
+    //     return ``;
+    // }
 
 }
 
-console.log(product1);
+// class Lothing extends Product {
+//     sizeChartLink;
+//     constructor(productDetails) {
+//         super(productDetails);
+//         this.sizeChartLink = productDetails.sizeChartLink;
+//     }
+
+//     extraInfoHTML() {
+
+//         return `
+//         <a href="${this.sizeChartLink}" target="_blank">
+//         Sizechat
+//         </a>
+//         `
+
+//     }
+// }
 
 export const products = [
     {
@@ -714,6 +733,10 @@ export const products = [
         ]
     }
 ].map((productDetails) => {
+    // if (productDetails.type === 'clothing') {
+    //     return new Lothing(productDetails);
+
+    // }
     return new Product(productDetails);
 });
 

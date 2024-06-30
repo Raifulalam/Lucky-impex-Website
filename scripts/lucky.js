@@ -44,6 +44,11 @@ products.forEach((product) => {
             <option value="10">10</option>
           </select>
         </div> -->
+ <!-- dollorsign{product.extraInfoHTML()}-->
+
+
+
+  
 
         <div class="product-spacer"></div>
 
