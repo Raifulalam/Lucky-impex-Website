@@ -3,6 +3,6 @@ xhr.addEventListener('load', () => {
     console.log(xhr.response);
 })
 
-xhr.open('GET', 'https://www.facebook.com/raiful.alam.31149');
+xhr.open('GET', 'https://api.github.com/users/Raifulalam');
 
 xhr.send();
