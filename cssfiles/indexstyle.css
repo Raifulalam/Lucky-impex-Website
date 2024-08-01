@@ -68,22 +68,6 @@
 
 }
 
-@media (max-width: 768px) {
-    .left {
-        width: unset;
-    }
-
-    .header {
-        height: 60px;
-
-        margin-bottom: 70px;
-    }
-
-    .search-bar {
-        height: 60px;
-    }
-}
-
 .middle {
     flex: 1;
     max-width: 850px;
@@ -93,6 +77,31 @@
     gap: 45px;
     padding-left: 20px;
 }
+
+@media (max-width: 768px) {
+    .left {
+        width: unset;
+    }
+
+    .header {
+        height: 60px;
+        margin-bottom: 50px;
+    }
+
+    .lucky-name {
+        display: none;
+    }
+
+    .middle {
+        margin: 0%;
+        padding: 0%;
+        gap: 20px;
+        align-items: center;
+        font-size: 12px;
+    }
+}
+
+
 
 
 /* Navbar container */
@@ -155,10 +164,6 @@
 }
 
 /* /////////////////////////////////////////////////////// */
-
-
-
-
 .image img {
     width: 100%;
 
@@ -167,7 +172,6 @@
 
 .image {
     position: relative;
-    top: 5px;
     overflow: visible;
 
 
@@ -346,6 +350,11 @@ body {
         margin-top: 62px;
     }
 
+    .image img {
+        width: 100%;
+        height: 200px;
+    }
+
     .lucky-details {
         display: none;
     }
@@ -365,6 +374,12 @@ body {
         flex-direction: column;
         margin: 0%;
         gap: 8px;
+    }
+
+    .main-branch-details span,
+    .maisthan-branch-details span {
+        font-size: 12px;
+
     }
 
 
@@ -521,6 +536,12 @@ body {
 
     .left-section1 {
         border-bottom: 2px solid black;
+    }
+
+    .lorem,
+    .note {
+        font-size: 12px;
+
     }
 
 }
