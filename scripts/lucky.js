@@ -30,7 +30,7 @@ products.forEach((product) => {
         Best Buy:${product.getPrice()}
         </div>
 
-        <!-- <div class="product-quantity-container">
+        <div class="product-quantity-container">
           <select>
             <option selected value="1">1</option>
             <option value="2">2</option>
@@ -43,7 +43,7 @@ products.forEach((product) => {
             <option value="9">9</option>
             <option value="10">10</option>
           </select>
-        </div> -->
+        </div> 
  <!-- dollorsign{product.extraInfoHTML()}-->
 
 
@@ -59,7 +59,7 @@ products.forEach((product) => {
 
         <button class="add-to-cart-button button-primary js-add-to-cart"
         data-product-id="${product.id}">
-          Add to Cart
+         Buy Now
         </button>
       </div>`;
 });

@@ -1,4 +1,3 @@
-
 export function getProduct(productId) {
     let matchingProducts;
     products.forEach((product) => {
@@ -8,8 +7,6 @@ export function getProduct(productId) {
     });
     return matchingProducts;
 }
-
-
 class Product {
     id;
     image;
@@ -142,7 +139,7 @@ export const products = [
     },
     {
         id: "3ebe75dc-64d2-4137-8860-1f5a963e534b",
-        image: "images/products/6-piece-white-dinner-plate-set.jpg",
+        image: "image/doubledoor/8E27B1000C3A723-RT49K6338BS.png",
         name: "6 Piece White Dinner Plate Set",
         rating: {
             stars: 4,
