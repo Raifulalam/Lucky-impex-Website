@@ -16,6 +16,7 @@ class Product {
     rating;
     mrp;
     price;
+    keywords;
 
     constructor(productDetails) {
         this.id = productDetails.id;
@@ -26,6 +27,7 @@ class Product {
         this.rating = productDetails.rating;
         this.mrp = productDetails.mrp;
         this.price = productDetails.price;
+        this.keywords = productDetails.keywords;
     }
     getStarsUrl() {
         return ` images/ratings/rating-${this.rating.stars * 10}.png`;
@@ -39,6 +41,9 @@ class Product {
     }
     getDiscount() {
         return `Rs ${this.mrp - this.price}`
+    }
+    getKeywords() {
+        return this.keywords.join(', ')
     }
     // extraInfoHTML() {
     //     return ``;
@@ -72,113 +77,118 @@ console.log(date.toLocaleDateString())
 export const products = [
     {
         id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
-        image: "front-image/RT28A32216R.png",
-        name: "Black and Gray Athletic Cotton Socks - 6 Pairs",
+        image: "image/doubledoor/1ECB5DF2089DD3E-RT28A32216R.png",
+        name: "RT28A32216R Samsung Double Door Refrigerator with Digital Inverter Technology, 253L",
         link: "details.html",
         details: "refrigerator of 100l samsung 22452",
         rating: {
             stars: 4.5,
             count: 87
         },
-        mrp: 48990,
-        price: 41750,
+        mrp: 60990,
+        price: 51000,
         keywords: [
-            "socks",
-            "sports",
-            "apparel"
+            "doubledoor",
+            "rt28a32216r",
+            "253"
         ]
     },
     {
         id: "15b6fc6f-327a-4ec4-896f-486349e85a3d",
-        image: "front-image/RT28A32216R.png",
-        name: "Intermediate Size Basketball",
+        image: "image/doubledoor/9D5A8F698D4550F-RT28A32216U.png",
+        name: "RT28A32216U Samsung Double Door Refrigerator with Digital Inverter Technology, 253L",
         rating: {
             stars: 4,
             count: 127
         },
-        mrp: 60458,
-        price: 56095,
+        mrp: 60990,
+        price: 51000,
         keywords: [
-            "sports",
-            "basketballs"
+            "doubledoor",
+            "rt28a32216u",
+            "253"
         ]
     },
     {
         id: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e",
-        image: "image/Single-door/RR20T282ZU8(2).png",
-        name: "Adults Plain Cotton T-Shirt - 2 Pack",
+        image: "image/doubledoor/11D12E847973D5A-RT28C3221CR.png",
+        name: "RT28C3221CR Samsung Double Door Refrigerator, 253L",
         rating: {
             stars: 4.5,
             count: 56
         },
-        mrp: 69453,
-        price: 63099,
+        mrp: 61990,
+        price: 51500,
         keywords: [
-            "tshirts",
-            "apparel",
-            "mens"
+            "doubledoor",
+            "rt28a3221cr",
+            "253"
         ],
         type: "clothing",
         sizeChartLink: "images/clothing-size-chart.png"
     },
     {
         id: "54e0eccd-8f36-462b-b68a-8182611d9add",
-        image: "image/Single-door/8071322C7EC07CC-RR20C20C2GS.png",
-        name: "2 Slot Toaster - Black",
+        image: "image/doubledoor/11DEAB55E1C3117-RT37C4521S8.png",
+        name: "RT37C4521S8 Samsung Double Door Refrigerator, 345L",
         rating: {
             stars: 5,
             count: 219
         },
-        mrp: 56102,
-        price: 48899,
+        mrp: 84990,
+        price: 71000,
         keywords: [
-            "toaster",
-            "kitchen",
-            "appliances"
+            "doubledoor",
+            "rt37c4521s8",
+            "345"
         ]
     },
     {
         id: "3ebe75dc-64d2-4137-8860-1f5a963e534b",
-        image: "image/doubledoor/8E27B1000C3A723-RT49K6338BS.png",
-        name: "6 Piece White Dinner Plate Set",
+        image: "image/doubledoor/A99F06C790B076B-RT28A3022GS.png",
+        name: "RT28A3022GS Samsung Double Door Refrigerator with Digital Inverter Technology, 253L",
         rating: {
             stars: 4,
             count: 37
         },
-        priceCents: 2067,
+        mrp: 56490,
+        price: 46500,
         keywords: [
-            "plates",
-            "kitchen",
-            "dining"
+            "doubledoor",
+            "rt28a3022gs",
+            "253"
         ]
     },
     {
         id: "8c9c52b5-5a19-4bcb-a5d1-158a74287c53",
-        image: "images/products/6-piece-non-stick-baking-set.webp",
-        name: "6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Set",
+        image: "image/doubledoor/AF918959F338CE2-RT28C3221CU.png",
+        name: "RT28C3221CU Samsung Double Door Refrigerator, 253L",
         rating: {
             stars: 4.5,
             count: 175
         },
-        priceCents: 3499,
+        mrp: 61990,
+        price: 51500,
         keywords: [
-            "kitchen",
-            "cookware"
+            "doubledoor",
+            "rt28c3221cu",
+            "253"
         ]
     },
     {
         id: "dd82ca78-a18b-4e2a-9250-31e67412f98d",
-        image: "images/products/plain-hooded-fleece-sweatshirt-yellow.jpg",
-        name: "Plain Hooded Fleece Sweatshirt",
+        image: "image/doubledoor/F889302D3166DF5-RT30K3342S8.png",
+        name: "RT30K3342S8 Samsung Double Door Refrigerator, 275L",
         rating: {
             stars: 4.5,
             count: 317
         },
-        priceCents: 2400,
+        mrp: 67990,
+        price: 55500,
         keywords: [
-            "hoodies",
-            "sweaters",
-            "apparel"
+            "doubledoor",
+            "rt30k3342s8",
+            "275"
         ]
     },
     {

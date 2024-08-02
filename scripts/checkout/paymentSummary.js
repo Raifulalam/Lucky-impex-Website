@@ -22,7 +22,7 @@ export function renderPaymentSummary() {
                 </div>
 
                 <div class="payment-summary-row">
-                    <div>Items (3):</div>
+                    <div>Items (${Math.ceil(total / productPrice)}):</div>
                     <div class="payment-summary-money">Rs ${productPrice.toFixed(2)}</div>
                 </div>
                  <div class="payment-summary-row subtotal-row">

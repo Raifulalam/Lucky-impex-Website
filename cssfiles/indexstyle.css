@@ -512,12 +512,13 @@ body {
 }
 
 .foot {
-    background-color: #f5f5f5;
+    background-color: #140e0e;
     padding: 20px;
     display: flex;
     justify-content: center;
     font-size: larger;
     margin: 0%;
+    color: #fff;
 
 }
 
@@ -542,6 +543,12 @@ body {
     .note {
         font-size: 12px;
 
+    }
+
+    .foot {
+        padding: 10px;
+        justify-content: left;
+        font-size: small;
     }
 
 }

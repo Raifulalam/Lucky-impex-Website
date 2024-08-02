@@ -29,38 +29,16 @@ products.forEach((product) => {
         <div class="product-price">
         Best Buy:${product.getPrice()}
         </div>
-
-        <div class="product-quantity-container">
-          <select>
-            <option selected value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-          </select>
-        </div> 
  <!-- dollorsign{product.extraInfoHTML()}-->
 
-
-
-  
-
-        <div class="product-spacer"></div>
-
-        <div class="added-to-cart">
-          <img src="images/icons/checkmark.png">
-          Added
-        </div>
-
+  <a href="checkout.html">
         <button class="add-to-cart-button button-primary js-add-to-cart"
         data-product-id="${product.id}">
+      
          Buy Now
+        
         </button>
+         </a>
       </div>`;
 });
 
@@ -82,6 +60,68 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
     updateCartQuantity();
 
   });
+});
+document.querySelector(".search-button").addEventListener('click', () => {
+  const searchValue = document.getElementById('searchInput').value.toLowerCase();
+  console.log(searchValue)
+  const filteredProducts = products.filter(product => product.getKeywords().toLowerCase().includes(searchValue));
+
+  // Display results
+  const resultsContainer = document.querySelector('.js-product-grid')
+  resultsContainer.innerHTML = '';
+  let foundProduct = '';
+  if (filteredProducts.length === 0) {
+    resultsContainer.textContent = 'No matching products found.';
+  } else {
+    filteredProducts.forEach(product => {
+      foundProduct += `  <div class="product-container">
+        <div class="product-image-container">
+         <a href="${product.link}">
+          <img class="product-image" src="${product.image}">
+           </a>
+        </div>
+
+        <div class="product-name limit-text-to-2-lines">
+          ${product.name}
+        </div>
+
+        <div class="product-rating-container">
+          <img class="product-rating-stars" src="${product.getStarsUrl()}">
+          <div class="product-rating-count link-primary">
+            ${product.rating.count} reviews
+          </div>
+        </div>
+         <div class="product-mrp">
+         MRP: ${product.getMrp()}
+        </div>
+         <div class="product-discount">
+          Discount: ${product.getDiscount()}
+        </div>
+        <div class="product-price">
+        Best Buy:${product.getPrice()}
+        </div>
+ <!-- dollorsign{product.extraInfoHTML()}-->
+
+  <a href="checkout.html">
+        <button class="add-to-cart-button button-primary js-add-to-cart"
+        data-product-id="${product.id}">
+      
+         Buy Now
+        
+        </button>
+         </a>
+      </div>`;
+
+
+
+
+
+      // const productElement = document.createElement('p');
+      // productElement.textContent = product.name;
+      // resultsContainer.appendChild(productElement);
+    });
+    resultsContainer.innerHTML = foundProduct;
+  }
 });
 
 
