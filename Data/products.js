@@ -90,7 +90,9 @@ export const products = [
         keywords: [
             "doubledoor",
             "rt28a32216r",
-            "253"
+            "253",
+            "refrigerator",
+            "samsung",
         ]
     },
     {
@@ -106,7 +108,9 @@ export const products = [
         keywords: [
             "doubledoor",
             "rt28a32216u",
-            "253"
+            "253",
+            "refrigerator",
+            "samsung",
         ]
     },
     {
@@ -122,10 +126,11 @@ export const products = [
         keywords: [
             "doubledoor",
             "rt28a3221cr",
-            "253"
+            "253",
+            "refrigerator",
+            "samsung",
         ],
-        type: "clothing",
-        sizeChartLink: "images/clothing-size-chart.png"
+
     },
     {
         id: "54e0eccd-8f36-462b-b68a-8182611d9add",
@@ -140,7 +145,9 @@ export const products = [
         keywords: [
             "doubledoor",
             "rt37c4521s8",
-            "345"
+            "345",
+            "refrigerator",
+            "samsung",
         ]
     },
     {
@@ -156,7 +163,9 @@ export const products = [
         keywords: [
             "doubledoor",
             "rt28a3022gs",
-            "253"
+            "253",
+            "refrigerator",
+            "samsung",
         ]
     },
     {
@@ -172,7 +181,9 @@ export const products = [
         keywords: [
             "doubledoor",
             "rt28c3221cu",
-            "253"
+            "253",
+            "refrigerator",
+            "samsung",
         ]
     },
     {
@@ -188,196 +199,194 @@ export const products = [
         keywords: [
             "doubledoor",
             "rt30k3342s8",
-            "275"
+            "275",
+            "refrigerator",
+            "samsung",
+
         ]
     },
+    //single door
     {
         id: "77919bbe-0e56-475b-adde-4f24dfed3a04",
-        image: "images/products/luxury-tower-set-6-piece.jpg",
-        name: "Luxury Towel Set - Graphite Gray",
+        image: "image/Single-door/1DA2BEA520BC02C-RR20C20C2RH.png",
+        name: "RR20C20C2RH Samsung Single Door Refrigerator, 192L",
         rating: {
             stars: 4.5,
             count: 144
         },
-        priceCents: 3599,
+        mrp: 32990,
+        price: 27500,
         keywords: [
-            "bathroom",
-            "washroom",
-            "restroom",
-            "towels",
-            "bath towels"
+            "singledoor",
+            "192",
+            "refrigerator",
+            "rr20c20c2rh",
+            "samsung",
+
         ]
     },
     {
         id: "3fdfe8d6-9a15-4979-b459-585b0d0545b9",
-        image: "images/products/liquid-laundry-detergent-plain.jpg",
-        name: "Liquid Laundry Detergent, 110 Loads, 82.5 Fl Oz",
+        image: "image/Single-door/2A2CA29862D7AB6-RR20T282ZR8.png",
+        name: "RR20T282ZR8 Samsung Single Door Refrigerator with Digital Inverter Compressor, 192L",
         rating: {
             stars: 4.5,
             count: 305
         },
-        priceCents: 2899,
+        mrp: 41990,
+        price: 36000,
         keywords: [
-            "bathroom",
-            "cleaning"
+            "singledoor",
+            "192",
+            "refrigerator",
+            "rr20t282zr8",
+            "samsung",
         ]
     },
     {
         id: "58b4fc92-e98c-42aa-8c55-b6b79996769a",
-        image: "images/products/knit-athletic-sneakers-gray.jpg",
-        name: "Waterproof Knit Athletic Sneakers - Gray",
+        image: "image/Single-door/7F470F4B6BA5539-RR20C2Z226U.png",
+        name: "RR20C2Z226U Samsung Single Door Refrigerator, 192L",
         rating: {
             stars: 4,
             count: 89
         },
-        priceCents: 3390,
+        mrp: 39590,
+        price: 33500,
         keywords: [
-            "shoes",
-            "running shoes",
-            "footwear"
+            "singledoor",
+            "192",
+            "refrigerator",
+            "rr20c2z226u",
+            "samsung",
         ]
     },
     {
         id: "5968897c-4d27-4872-89f6-5bcb052746d7",
-        image: "images/products/women-chiffon-beachwear-coverup-black.jpg",
-        name: "Women's Chiffon Beachwear Cover Up - Black",
+        image: "image/Single-door/8E7A9442734E2F4-RR20C2Z226R.png",
+        name: "RR20C2Z226R Samsung Single Door Refrigerator, 192L",
         rating: {
             stars: 4.5,
             count: 235
         },
-        priceCents: 2070,
+        mrp: 39590,
+        price: 33500,
         keywords: [
-            "robe",
-            "swimsuit",
-            "swimming",
-            "bathing",
-            "apparel"
+            "singledoor",
+            "192",
+            "refrigerator",
+            "rr20c2z226r",
+            "samsung",
         ],
-        type: "clothing",
-        sizeChartLink: "images/clothing-size-chart.png"
+
     },
     {
         id: "aad29d11-ea98-41ee-9285-b916638cac4a",
-        image: "images/products/round-sunglasses-black.jpg",
-        name: "Round Sunglasses",
+        image: "image/Single-door/563F7C13FC6004D-RR20M282ZS8.png",
+        name: "RR20M282ZS8 Samsung Single Door Refrigerator with Digital Inverter Technology, 192L",
         rating: {
             stars: 4.5,
             count: 30
         },
-        priceCents: 1560,
+        mrp: 38990,
+        price: 33000,
         keywords: [
-            "accessories",
-            "shades"
+            "singledoor",
+            "192",
+            "refrigerator",
+            "rr20m282zs8",
+            "samsung",
         ]
     },
     {
         id: "04701903-bc79-49c6-bc11-1af7e3651358",
-        image: "images/products/women-beach-sandals.jpg",
-        name: "Women's Two Strap Buckle Sandals - Tan",
+        image: "image/Single-door/757D53379073106-RR20C2412S8.png",
+        name: "RR20C2412S8 Samsung Single Door Refrigerator, 192L",
         rating: {
             stars: 4.5,
             count: 562
         },
-        priceCents: 2499,
+        mrp: 36990,
+        price: 31500,
         keywords: [
-            "footwear",
-            "sandals",
-            "womens",
-            "beach",
-            "summer"
+            "singledoor",
+            "192",
+            "refrigerator",
+            "rr20c2412s8",
+            "samsung",
         ]
     },
     {
         id: "901eb2ca-386d-432e-82f0-6fb1ee7bf969",
-        image: "images/products/blackout-curtain-set-beige.webp",
-        name: "Blackout Curtains Set 4-Pack - Beige",
+        image: "image/Single-door/857BCE683515D79-RR20C2722CR.png",
+        name: "RR20C2722CR Samsung Single Door Refrigerator, 192L",
         rating: {
             stars: 4.5,
             count: 232
         },
-        priceCents: 4599,
+        mrp: 37990,
+        price: 32500,
         keywords: [
-            "bedroom",
-            "curtains",
-            "home"
+            "singledoor",
+            "192",
+            "refrigerator",
+            "rr20c2722cr",
+            "samsung",
         ]
     },
     {
         id: "82bb68d7-ebc9-476a-989c-c78a40ee5cd9",
-        image: "images/products/men-slim-fit-summer-shorts-gray.jpg",
-        name: "Men's Slim-Fit Summer Shorts",
+        image: "image/Single-door/5744E605DA3F99D-RR20C2722CU.png",
+        name: "RR20C2722CU Samsung Single Door Refrigerator, 192L",
         rating: {
             stars: 4,
             count: 160
         },
-        priceCents: 1699,
+        mrp: 37990,
+        price: 32500,
         keywords: [
-            "shorts",
-            "apparel",
-            "mens"
+            "singledoor",
+            "192",
+            "refrigerator",
+            "rr20c2722cu",
+            "samsung",
         ]
     },
-    {
-        id: "c2a82c5e-aff4-435f-9975-517cfaba2ece",
-        image: "images/products/electric-glass-and-steel-hot-water-kettle.webp",
-        name: "Electric Glass and Steel Hot Tea Water Kettle - 1.7-Liter",
-        rating: {
-            stars: 5,
-            count: 846
-        },
-        priceCents: 3074,
-        keywords: [
-            "water boiler",
-            "appliances",
-            "kitchen"
-        ]
-    },
+
     {
         id: "6b07d4e7-f540-454e-8a1e-363f25dbae7d",
-        image: "images/products/facial-tissue-2-ply-18-boxes.jpg",
-        name: "Ultra Soft Tissue 2-Ply - 18 Box",
+        image: "image/Single-door/8071322C7EC07CC-RR20C20C2GS.png",
+        name: "RR20C20C2GS Samsung Single Door Refrigerator, 192L",
         rating: {
             stars: 4,
             count: 99
         },
-        priceCents: 2374,
+        mrp: 33490,
+        price: 28500,
         keywords: [
-            "kleenex",
-            "tissues",
-            "kitchen",
-            "tissues box",
-            "napkins"
-        ]
-    },
-    {
-        id: "a82c6bac-3067-4e68-a5ba-d827ac0be010",
-        image: "images/products/straw-sunhat.webp",
-        name: "Straw Lifeguard Sun Hat",
-        rating: {
-            stars: 4,
-            count: 215
-        },
-        priceCents: 2200,
-        keywords: [
-            "hats",
-            "straw hats",
-            "summer",
-            "apparel"
+            "singledoor",
+            "192",
+            "refrigerator",
+            "rr20c20c2gs",
+            "samsung",
         ]
     },
     {
         id: "e4f64a65-1377-42bc-89a5-e572d19252e2",
-        image: "images/products/sky-flower-stud-earrings.webp",
-        name: "Sterling Silver Sky Flower Stud Earrings",
+        image: "image/Single-door/E3EAF0181A3C8AB-RR20T282ZU8.png",
+        name: "RR20T282ZU8 Samsung Single Door Refrigerator with Digital Inverter Compressor, 192L",
         rating: {
             stars: 4.5,
             count: 52
         },
-        priceCents: 1799,
+        mrp: 41990,
+        price: 36000,
         keywords: [
-            "jewelry",
-            "accessories",
-            "womens"
+            "singledoor",
+            "192",
+            "refrigerator",
+            "rr20t282zu8",
+            "samsung",
         ]
     },
     {
@@ -396,8 +405,6 @@ export const products = [
             "womens",
             "apparel"
         ],
-        type: "clothing",
-        sizeChartLink: "images/clothing-size-chart.png"
     },
     {
         id: "a93a101d-79ef-4cf3-a6cf-6dbe532a1b4a",

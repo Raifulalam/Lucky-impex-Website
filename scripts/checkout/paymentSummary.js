@@ -4,12 +4,14 @@ import { deliveryOptions, getDeliveryoption } from '../../Data/delivery.js';
 export function renderPaymentSummary() {
     let productPrice = 0;
     let shippingPrice = 0;
+    let cont = 0;
     cart.forEach((cartItem) => {
         const product = getProduct(cartItem.productId);
         productPrice += product.price * cartItem.quantity;
 
         const deliveryOptions = getDeliveryoption(cartItem.deliveryOptionId);
         shippingPrice += deliveryOptions.price;
+        cont++;
     });
     const totalBeforeTax = productPrice / 1.13;
     const taxprice = totalBeforeTax * 0.13;
@@ -22,7 +24,7 @@ export function renderPaymentSummary() {
                 </div>
 
                 <div class="payment-summary-row">
-                    <div>Items (${Math.ceil(total / productPrice)}):</div>
+                    <div>Items (${cont}):</div>
                     <div class="payment-summary-money">Rs ${productPrice.toFixed(2)}</div>
                 </div>
                  <div class="payment-summary-row subtotal-row">
@@ -53,6 +55,7 @@ export function renderPaymentSummary() {
                 </button>
     
     `;
+
     document.querySelector('.js-payment-summary').innerHTML
         = paymentSummaryHTML;
 }
