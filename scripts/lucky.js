@@ -31,14 +31,14 @@ products.forEach((product) => {
         </div>
  <!-- dollorsign{product.extraInfoHTML()}-->
 
-  <a href="checkout.html">
+
         <button class="add-to-cart-button button-primary js-add-to-cart"
         data-product-id="${product.id}">
       
-         Buy Now
+        Add to Cart
         
         </button>
-         </a>
+  
       </div>`;
 });
 
