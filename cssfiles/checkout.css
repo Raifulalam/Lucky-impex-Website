@@ -69,11 +69,6 @@
 
     margin-top: 140px;
     margin-bottom: 100px;
-
-    /* margin-left: auto;
-       margin-right auto;
-       Is a trick for centering an element horizontally
-       without needing a container. */
     margin-left: auto;
     margin-right: auto;
     z-index: 0;
@@ -88,13 +83,8 @@
 
 .checkout-grid {
     display: grid;
-    /* Here, 1fr means the first column will take
-       up the remaining space in the grid. */
     grid-template-columns: 1fr 350px;
     column-gap: 12px;
-
-    /* Use align-items: start; to prevent the elements
-       in the grid from stretching vertically. */
     align-items: start;
 }
 
@@ -105,6 +95,10 @@
 
     .checkout-grid {
         grid-template-columns: 1fr;
+    }
+
+    .checkout {
+        display: none;
     }
 }
 
@@ -153,8 +147,8 @@
 
 @media (max-width: 1000px) {
     .cart-item-details-grid {
-        grid-template-columns: 100px 1fr;
-        row-gap: 30px;
+        grid-template-columns: 110px 1fr;
+        row-gap: 15px;
     }
 }
 
@@ -197,6 +191,17 @@
          in the grid (Normally, each element takes up 1
          column in the grid). */
         grid-column: 1 / span 2;
+    }
+
+    .product-name {
+        font-size: large;
+        margin-bottom: 80px;
+
+    }
+
+    .product-price {
+        font-size: large;
+        margin-bottom: 12px;
     }
 }
 

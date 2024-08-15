@@ -117,6 +117,11 @@
   margin-bottom: 10px;
 }
 
+.product-discount {
+  color: red;
+  text-decoration: line-through;
+}
+
 .product-rating-stars {
   width: 100px;
   margin-right: 6px;
@@ -131,6 +136,7 @@
 .product-price {
   font-weight: 700;
   margin-bottom: 10px;
+
 }
 
 .product-quantity-container {
@@ -145,6 +151,7 @@
   width: 100%;
   padding: 8px;
   border-radius: 50px;
+
 }
 
 @media (max-width: 1000px) {
