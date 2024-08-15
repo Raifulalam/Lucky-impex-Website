@@ -124,4 +124,8 @@ document.querySelector(".search-button").addEventListener('click', () => {
   }
 });
 
+document.addEventListener('load', () => {
+
+})
+
 
