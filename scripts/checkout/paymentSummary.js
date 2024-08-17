@@ -10,7 +10,7 @@ export function renderPaymentSummary() {
     cart.forEach((cartItem) => {
         const product = getProduct(cartItem.productId);
         productPrice += product.price * cartItem.quantity;
-        quantity++;
+        quantity += cartItem.quantity;
         const deliveryOptions = getDeliveryoption(cartItem.deliveryOptionId);
         shippingPrice += deliveryOptions.price;
 
@@ -53,9 +53,9 @@ export function renderPaymentSummary() {
                     <div class="payment-summary-money">Rs ${total.toFixed(2)}</div>
                 </div>
 
-                <button class="place-order-button button-primary">
+                <a href="customerForm.html"><button class="place-order-button button-primary">
                     Place your order
-                </button>
+                </button></a>
     
     `;
 

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Form</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .fill-form {}
+
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+        border: 2px;
+    }
+
+    form input {
+        padding: 4px;
+        width: 80%;
+    }
+
+    form select {
+        padding: 4px;
+        width: 82.5%;
+    }
+
+    form textarea {
+        padding: 4px;
+        width: 80%;
+    }
+
+    td {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+
+    .selectPayment {
+        width: 100%;
+        margin: auto;
+    }
+
+    .payment-option {
+        margin-bottom: 10px;
+    }
+
+    .payment-option input {
+        margin-right: 10px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="fill-form">
+            <form action="" method="post">
+                <table>
+                    <thead>
+                        <th>
+                            <h1>Fill the details:👇</h1>
+                        </th>
+                    </thead>
+                    <tr>
+                        <td>Customer Name:</td>
+                        <td><input type="text" id="name" name="name" required placeholder="Full Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Contact Number:</td>
+                        <td><input type="text" id="name" name="name" required placeholder="Contact Number"></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" id="name" name="name" required placeholder="Email"></td>
+                    </tr>
+                    <tr>
+                        <td>Select Province:</td>
+                        <td><select name="select" id="sel1" class="combo-a" data-nextcombo=".combo-b">
+                                <option value="KoshiPradesh">Koshi Pradesh</option>
+                                <option value="KoshiPradesh">Madhesh Pradesh</option>
+                                <option value="KoshiPradesh">Bagmati Pradesh</option>
+                                <option value="KoshiPradesh">Gandaki Pradesh</option>
+                                <option value="KoshiPradesh">Lumbini Pradesh</option>
+                                <option value="KoshiPradesh">Karnali Pradesh</option>
+                                <option value="KoshiPradesh">Sudurpaschim Pradesh</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Select District:</td>
+                        <td><select id="districts" name="districts">
+                                <option value="default"></option>
+                                <option value="achham">Achham</option>
+                                <option value="arghakhanchi">Arghakhanchi</option>
+                                <option value="argakhanchi">Argakhanchi</option>
+                                <option value="baglung">Baglung</option>
+                                <option value="bagmati">Bagmati</option>
+                                <option value="bajhang">Bajhang</option>
+                                <option value="bajura">Bajura</option>
+                                <option value="banke">Banke</option>
+                                <option value="bara">Bara</option>
+                                <option value="bardiya">Bardiya</option>
+                                <option value="bhaktapur">Bhaktapur</option>
+                                <option value="bhojpur">Bhojpur</option>
+                                <option value="chandrapur">Chandrapur</option>
+                                <option value="chitwan">Chitwan</option>
+                                <option value="darchula">Darchula</option>
+                                <option value="dailekh">Dailekh</option>
+                                <option value="dang">Dang</option>
+                                <option value="dhanusa">Dhanusa</option>
+                                <option value="dholkha">Dholkha</option>
+                                <option value="dolakha">Dolakha</option>
+                                <option value="dolpa">Dolpa</option>
+                                <option value="doti">Doti</option>
+                                <option value="eastern">Eastern</option>
+                                <option value="gulmi">Gulmi</option>
+                                <option value="gorkha">Gorkha</option>
+                                <option value="hadiya">Hadiya</option>
+                                <option value="himalaya">Himalaya</option>
+                                <option value="illam">Ilam</option>
+                                <option value="jajarkot">Jajarkot</option>
+                                <option value="jakhar">Jakhar</option>
+                                <option value="jajarkot">Jajarkot</option>
+                                <option value="janakpur">Janakpur</option>
+                                <option value="japdi">Japdi</option>
+                                <option value="kailali">Kailali</option>
+                                <option value="kaski">Kaski</option>
+                                <option value="kathmandu">Kathmandu</option>
+                                <option value="kavre">Kavre</option>
+                                <option value="khotang">Khotang</option>
+                                <option value="lamjung">Lamjung</option>
+                                <option value="mahottari">Mahottari</option>
+                                <option value="makawanpur">Makawanpur</option>
+                                <option value="manang">Manang</option>
+                                <option value="morang">Morang</option>
+                                <option value="mugu">Mugu</option>
+                                <option value="nawalparasi">Nawalparasi</option>
+                                <option value="nepalgunj">Nepalgunj</option>
+                                <option value="okhaldhunga">Okhaldhunga</option>
+                                <option value="palpa">Palpa</option>
+                                <option value="parbat">Parbat</option>
+                                <option value="parsa">Parsa</option>
+                                <option value="rukum">Rukum</option>
+                                <option value="rupandehi">Rupandehi</option>
+                                <option value="saptari">Saptari</option>
+                                <option value="sarlahi">Sarlahi</option>
+                                <option value="sindhuli">Sindhuli</option>
+                                <option value="sindhupalchok">Sindhupalchok</option>
+                                <option value="siraha">Siraha</option>
+                                <option value="solukhumbu">Solukhumbu</option>
+                                <option value="sunsari">Sunsari</option>
+                                <option value="surkhet">Surkhet</option>
+                                <option value="syangja">Syangja</option>
+                                <option value="taplejung">Taplejung</option>
+                                <option value="terhathum">Terhathum</option>
+                                <option value="udayapur">Udayapur</option>
+                                <option value="kaski">Kaski</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            City:
+                        </td>
+                        <td><input type="text" placeholder="City Name"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Pin Code:
+                        </td>
+                        <td><input type="number" placeholder="City Pin code"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Street:
+                        </td>
+                        <td><input type="text" placeholder="Street"></td>
+
+
+                    </tr>
+                    <tr>
+                        <td>Block:</td>
+                        <td><input type="text" placeholder="Block"></td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td><textarea name="Address" id=""></textarea></td>
+                    </tr>
+                </table>
+
+                <button>Submit</button>
+            </form>
+        </div>
+        <div class="selectPayment">
+            <h1>Select Payment Method</h1>
+            <form action="/submit-payment" method="post">
+                <div class="payment-option">
+                    <input type="radio" id="credit-card" name="payment-method" value="credit-card" required>
+                    <label for="credit-card">Credit Card</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="debit-card" name="payment-method" value="debit-card">
+                    <label for="debit-card">Debit Card</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="paypal" name="payment-method" value="paypal">
+                    <label for="paypal">PayPal</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="bank-transfer" name="payment-method" value="bank-transfer">
+                    <label for="bank-transfer">Bank Transfer</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="cash-on-delivery" name="payment-method" value="cash-on-delivery">
+                    <label for="cash-on-delivery">Cash on Delivery</label>
+                </div>
+                <button type="submit">Submit Payment Method</button>
+            </form>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
