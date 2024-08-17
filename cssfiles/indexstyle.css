@@ -1,3 +1,9 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: #fff;
+}
+
 .header {
     background-color: rgb(39, 59, 66);
     color: white;
@@ -12,9 +18,6 @@
     height: 55px;
     box-shadow: 0px 1px 3px skyblue;
     z-index: 1;
-
-
-
 }
 
 .header-link {
@@ -166,15 +169,11 @@
 /* /////////////////////////////////////////////////////// */
 .image img {
     width: 100%;
-
-
 }
 
 .image {
     position: relative;
     overflow: visible;
-
-
 }
 
 .services a,
@@ -237,15 +236,14 @@
 .details {
     display: flex;
     flex-direction: column;
-    font-size: larger;
-    line-height: 25px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
 
 
 }
 
 .details ul {
     margin: 10px;
+    list-style: none;
 }
 
 .details span {
@@ -263,13 +261,6 @@
     color: rgb(2, 73, 79);
 }
 
-body {
-    margin: 0%;
-    padding: 0%;
-
-}
-
-
 .lucky-main-body {
     display: flex;
     flex-direction: column;
@@ -277,11 +268,6 @@ body {
     align-items: center;
     margin: 0%;
     padding: 3%;
-    background-color: hsl(207, 100%, 98%);
-
-
-
-
 }
 
 .branch-details {
@@ -292,25 +278,30 @@ body {
 
 .main-branch {
     display: flex;
-    margin-top: 0px;
-    background-color: hsl(207, 100%, 98%);
-    gap: 40px;
     padding: 20px;
-    border-bottom: 2px solid red;
+    margin: 18px;
+    margin-bottom: 30px;
+    box-shadow: 4px 4px 8px rgb(55, 55, 62);
 
 }
 
 .main-branch-details {
     display: flex;
     flex-direction: column;
+    padding: 15px;
+    padding-left: 35px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 400;
 }
 
 .main-branch-details span,
 .maisthan-branch-details span {
+    /* font-size: 16px;
+    font-weight: 500; */
     font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
+    font-weight: 400;
 }
 
 .image-container img {
@@ -318,7 +309,6 @@ body {
     height: 400px;
 
 }
-
 
 .top {
     height: 158px;
@@ -338,10 +328,12 @@ body {
 
 .maisthan-branch {
     display: flex;
-    margin-top: 0px;
-    background-color: hsl(207, 100%, 98%);
     gap: 40px;
     padding: 20px;
+    margin: 18px;
+    margin-top: auto;
+    box-shadow: 4px 4px 8px rgb(0, 0, 0);
+    font-family: sans-serif;
 }
 
 
@@ -352,7 +344,7 @@ body {
 
     .image img {
         width: 100%;
-        height: 200px;
+        height: 220px;
     }
 
     .lucky-details {
@@ -361,11 +353,6 @@ body {
 
     .top {
         height: 0%;
-    }
-
-    .details {
-        font-size: 12px;
-        line-height: normal;
     }
 
     .main-branch,
@@ -378,7 +365,9 @@ body {
 
     .main-branch-details span,
     .maisthan-branch-details span {
-        font-size: 12px;
+        font-size: 16px;
+        font-family: sans-serif;
+        font-weight: 400;
 
     }
 
@@ -405,14 +394,16 @@ body {
 }
 
 .footer {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: hsl(192, 100%, 9%);
-    margin-top: 0px;
+    margin-top: 10px;
     color: white;
-    gap: 350px;
+    gap: 60px;
+    padding: 25px;
     justify-content: center;
-    padding-bottom: 5%;
-
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 
@@ -428,23 +419,34 @@ body {
     margin: 10px;
 }
 
+.right-section {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 10px;
+    box-shadow: 3px 3px 8px rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-top: 15px;
+
+}
+
+.left-section1 {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 15px;
+    padding: 20px;
+    box-shadow: 3px 3px 8px rgb(0, 0, 0);
+    border-radius: 10px;
+
+
+}
 
 
 
 .note {
-    max-width: 350px;
+
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
 }
-
-.lorem {
-    max-width: 350px;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-
 
 .contact {
     display: flex;
@@ -478,6 +480,7 @@ body {
 .phone img {
     width: 20px;
     height: 20px;
+
 }
 
 .left-section {
@@ -528,20 +531,25 @@ body {
 
 @media (max-width:600px) {
     .footer {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
         padding-left: 8px;
         gap: 15px;
-
-
     }
 
     .left-section1 {
-        border-bottom: 2px solid black;
+        margin: 0%;
+    }
+
+    .right-section {
+        margin: 0%;
     }
 
     .lorem,
     .note {
-        font-size: 12px;
+        font-size: 16px;
+        font-family: sans-serif;
+
 
     }
 

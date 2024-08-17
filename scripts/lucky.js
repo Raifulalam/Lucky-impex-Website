@@ -56,10 +56,10 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
   button.addEventListener('click', () => {
     const productId = button.dataset.productId;
     addToCart(productId);
-
+    alert(`Product Added to Cart: ${productId}`)
     updateCartQuantity();
-
   });
+
 });
 document.querySelector(".search-button").addEventListener('click', () => {
   const searchValue = document.getElementById('searchInput').value.toLowerCase();
@@ -111,11 +111,6 @@ document.querySelector(".search-button").addEventListener('click', () => {
         </button>
          </a>
       </div>`;
-
-
-
-
-
       // const productElement = document.createElement('p');
       // productElement.textContent = product.name;
       // resultsContainer.appendChild(productElement);
@@ -123,9 +118,6 @@ document.querySelector(".search-button").addEventListener('click', () => {
     resultsContainer.innerHTML = foundProduct;
   }
 });
-
-document.addEventListener('load', () => {
-
-})
+window.onload = updateCartQuantity()
 
 

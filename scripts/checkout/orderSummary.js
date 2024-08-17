@@ -1,4 +1,4 @@
-import { cart, removeFromCart, updateDeliveryOption } from '../../Data/cart.js';
+import { cart, removeFromCart, updateDeliveryOption, updateQuantity } from '../../Data/cart.js';
 import { products, getProduct } from '../../Data/products.js';
 import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
 import { deliveryOptions, getDeliveryoption } from '../../Data/delivery.js';
@@ -12,7 +12,7 @@ export function renderOrderSummary() {
         const matchingProducts = getProduct(productId);
         const deliveryOptionId = cartItem.deliveryOptionId;
         const deliveryOption = getDeliveryoption(deliveryOptionId);
-
+        const quantity = cartItem.quantity;
         const today = dayjs();
         const deliveryDate = today.add(deliveryOption.deliveryDays,
             'day');
@@ -42,7 +42,7 @@ export function renderOrderSummary() {
                                     <span>
                                         Quantity: <span class="quantity-label">${cartItem.quantity}</span>
                                     </span>
-                                    <span class="update-quantity-link link-primary">
+                                    <span class="update-quantity-link link-primary js-update-link">
                                         Update
                                     </span>
                                     <span class="delete-quantity-link link-primary js-delete-link" data-product-id="${matchingProducts.id}">
@@ -109,6 +109,18 @@ export function renderOrderSummary() {
                 const container = document.querySelector(`.js-cart-item-container-${productId}`);
                 container.remove();
                 renderPaymentSummary();
+            });
+
+        });
+    document.querySelectorAll('.js-update-link')
+        .forEach((link) => {
+            link.addEventListener('click', (event) => {
+
+                // const quantity = link.dataset.quantity;
+                const productId = link.dataset.productId;
+                updateQuantity(productId);
+                renderPaymentSummary();
+
             });
 
         });
