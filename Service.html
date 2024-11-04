@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Problem Report Form</title>
+    <link rel="stylesheet" href="./cssfiles/Service.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Report Customer Problem</h1>
+        <form id="reportForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Full Address:</label>
+            <input type="text" id="address" name="address" required>
+            <label for="mobile">Phone number</label>
+            <input type="number" id="number" required>
+
+            <label for="landmark">Landmaek</label>
+            <input type="text">
+            <label for="addressline">Address Line 1</label>
+            <input type="text">
+            <label for="addressline">Address Line 2</label>
+            <input type="text">
+
+            <label for="state">Select Province:</label>
+            <select name="select" id="sel1" class="combo-a" data-nextcombo=".combo-b">
+                <option value="select">--Select Province--</option>
+                <option value="KoshiPradesh">Koshi Pradesh</option>
+                <option value="KoshiPradesh">Madhesh Pradesh</option>
+                <option value="KoshiPradesh">Bagmati Pradesh</option>
+                <option value="KoshiPradesh">Gandaki Pradesh</option>
+                <option value="KoshiPradesh">Lumbini Pradesh</option>
+                <option value="KoshiPradesh">Karnali Pradesh</option>
+                <option value="KoshiPradesh">Sudurpaschim Pradesh</option>
+            </select>
+
+            <label for="category">Product Category:</label>
+            <select id="category" name="category" required>
+                <option value="">--Select Category--</option>
+                <option value="ledtv">LED TV</option>
+                <option value="washingmachine">Washing Machine/option>
+                <option value="airconditioner">Air Conditioner</option>
+                <option value="refrigerator">Refrigerator</option>
+                <option value="others">Others</option>
+                <!-- Add more categories as needed -->
+            </select>
+            <label for="model">Product model</label>
+            <input type="text" name="model" id="model" required>
+
+
+
+            <label for="warranty">Is the product in warranty?</label>
+            <div>
+                <label><input type="radio" name="warranty" value="yes" required> Yes</label>
+                <label><input type="radio" name="warranty" value="no"> No</label>
+            </div>
+            <label for="details">Problem in Details:</label>
+            <textarea id="details" name="details" required></textarea>
+
+            <label for="image">Upload Product Image:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+
+            <button type="submit">Submit Report</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
